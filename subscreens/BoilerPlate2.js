@@ -50,7 +50,7 @@ mode ? {mode}</Text></View>
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "light blue",
+    backgroundColor: "orange",
   }
  });
  export default App;
