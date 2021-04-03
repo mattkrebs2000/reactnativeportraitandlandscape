@@ -72,29 +72,29 @@ import {
         </View>
       </ImageBackground>
     </View> : null}
-    <View style={styles.imagecontainer2}>
+    <View style={mode === "portrait" ? styles.imagecontainer2 : styles.imagecontainer3}>
       <ImageBackground source={header} style={styles.image2}>
         <View style={styles.linkcenter}>
           <ScrollView
             horizontal={true}
             showsHorizontalScrollIndicator={false}
           ><View style={styles.linkcenter2}>
-            <Text style={styles.links} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Home</Text>
+            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Home</Text>
             </View>
             <View style={styles.linkcenter2}>
-            <Text style={styles.links} onPress={() => setModalVisible(true)}>VideoInModal</Text>
+            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => setModalVisible(true)}>VideoInModal</Text>
             </View>
             <View style={styles.linkcenter2}>
-            <Text style={styles.links} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Products</Text>
+            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Products</Text>
             </View>
             <View style={styles.linkcenter2}>
-            <Text style={styles.links} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Services</Text>
+            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Services</Text>
             </View>
             <View style={styles.linkcenter2}>
-            <Text style={styles.links} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Design</Text>
+            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Design</Text>
             </View>
             <View style={styles.linkcenter2}>
-            <Text style={styles.links} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Contact</Text>
+            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Contact</Text>
             </View>
           </ScrollView>
         </View>
@@ -253,6 +253,12 @@ import {
         alignItems: "center",
         flex: 0.1,
         width: "90%",
+       
+      },
+      imagecontainer3: {
+        alignItems: "center",
+        flex: 0.2,
+        width: "90%",
       },
       text: {
         flex: 0.8,
@@ -268,6 +274,13 @@ import {
         marginRight: "25@s",
         marginLeft: "15@s",
         fontSize: "10@s",
+      },
+      links2: {
+        color: "white",
+        fontWeight: "bold",
+        marginRight: "25@s",
+        marginLeft: "15@s",
+        fontSize: "14@s",
       },
       toptext: {
         color: "white",
