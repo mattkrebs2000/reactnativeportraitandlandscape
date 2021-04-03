@@ -9,6 +9,8 @@ The Portrait View looks like this:
 [logo]: https://github.com/mattkrebs2000/reactnativeportraitandlandscape/blob/master/Portrait.png
 
 
+The Landscape View looks like this:
+
 ![alt text][logo2]
 
 [logo2]: https://github.com/mattkrebs2000/reactnativeportraitandlandscape/blob/master/Landscape.png
