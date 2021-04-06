@@ -25,8 +25,6 @@ https://www.html.am/templates/downloads/bryantsmith/barrensavannah/
 
 https://www.html.am/templates/downloads/bryantsmith/hdmonochrome/
 
-https://www.html.am/templates/downloads/bryantsmith/anoceanofsky/
-
 
 For additional webpages that can be used to recreate on mobile visit: https://www.html.am/templates/simple-website-templates/
 
