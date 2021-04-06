@@ -3,8 +3,10 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Nochange from "./subscreens/nochanges";
 import Change from "./subscreens/changes";
+import Change1 from "./subscreens/changes1";
+import Boilerplate from "./subscreens/BoilerPlate";
 import Boilerplate1 from "./subscreens/BoilerPlate1";
-import Boilerplate2 from "./subscreens/BoilerPlate2";
+
 
 export default function App() {
   return (
@@ -12,11 +14,11 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });

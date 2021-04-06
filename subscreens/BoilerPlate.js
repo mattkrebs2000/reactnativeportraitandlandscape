@@ -35,7 +35,7 @@ import React, { useState, useEffect } from "react";
    
  return (
     
-<View style={mode === "portrait" ? styles.container : styles.container2}><Text>Window Dimensions: height: {dimensions.window.height}, width: {dimensions.window.width} screen: {dimensions.screen.width}
+<View style={mode === "portrait" ? styles.container : styles.container2}><Text style={styles.text}>Window Dimensions: height: {dimensions.window.height}, width: {dimensions.window.width} screen: {dimensions.screen.width}
 mode ? {mode}</Text></View>
    );
  }
@@ -45,12 +45,17 @@ mode ? {mode}</Text></View>
      justifyContent: "center",
      alignItems: "center",
      backgroundColor: "yellow",
+     
    },
    container2: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "orange",
+   
+  },
+  text: {
+    fontSize: 40,
   }
  });
  export default App;
