@@ -6,11 +6,14 @@ import Change from "./subscreens/changes";
 import Change1 from "./subscreens/changes1";
 import Boilerplate from "./subscreens/BoilerPlate";
 import Boilerplate1 from "./subscreens/BoilerPlate1";
+import Fitbackgroundimage from "./subscreens/BImageonly";
 
 
 export default function App() {
   return (
-    <Change />
+    <Fitbackgroundimage
+
+     />
   );
 }
 
